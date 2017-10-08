@@ -1,0 +1,22 @@
+<div class="col-sm-6 col-md-4">
+  <div class="thumbnail">
+
+    <%= content_tag 'div', '',
+                    class: 'movie-background',
+                    style: "background-image: url(#{asset_path('movie_thumb.png')})"
+    %>
+
+    <div class="thumbnail-inner movie-info-inner">
+      <div class="caption">
+        <div class="movie-description">
+          <h3><%= link_to movie.title, movie_path(movie) %></h3>
+          <h3>
+            <small>Director: <%= movie.director %></small>
+            <small>Released: <%= movie.year %></small>
+            <p>Description:</p>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

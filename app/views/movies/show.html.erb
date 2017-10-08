@@ -1,0 +1,12 @@
+<h1>Movie</h1>
+
+<% if @movie.present? %>
+  <h3><%= @movie.title %></h3>
+  <p>Director:&nbsp<%= @movie.director %></p>
+  <p>Released:&nbsp<%= @movie.year %> year</p>
+  <p>Description: <%= @movie.description %></p>
+<% else %>
+  <h4>Sorry, unfortunately there is no movie</h4>
+<% end %>
+
+<%= link_to 'Back to movies', movies_path, class: 'btn btn-default' %>
