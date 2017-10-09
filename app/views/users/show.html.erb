@@ -1,0 +1,6 @@
+<div class="text-center">
+  <%= image_tag('', alt: 'No fucking photo') %>
+  <%= mail_to @user.email %>
+  <%= link_to 'Edit', edit_user_registration_path(@user) %> |
+  <%= link_to 'Back', :back %>
+</div>
